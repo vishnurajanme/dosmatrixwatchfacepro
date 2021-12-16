@@ -1,0 +1,22 @@
+<resources>
+    <!-- Here you can add color of your choice  -->
+    <color name="positiveButtonTextColor">@color/cardview_dark_background</color>
+    <color name="negativeButtonTextColor">@color/action_button_background</color>
+    <color name="bottomSheetDividerColor">#F5F5F5</color>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents">
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryVariant">#000000</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#2962FF</item>
+        <item name="colorSecondaryVariant">#0039CB</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorError">#F44336</item>
+        <item name="colorOnError">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#212121</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnBackground">#212121</item>
+    </style>
+    <color name="background">#FAFAFA</color>
+</resources>

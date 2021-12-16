@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".ConfigurationActivity"
+    tools:deviceIds="wear"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="50dp"
+            android:background="@color/dark_blue"
+            >
+
+            <TextView
+                android:id="@+id/textSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="40sp"/>
+
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swMatrix"
+                android:text="Matrix"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textSettings"
+                android:layout_centerHorizontal="true"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swCursor"
+                android:text="Cursor"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/swMatrix"
+                android:layout_centerHorizontal="true"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swRandom"
+                android:text="More Info"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/swCursor"
+                android:layout_centerHorizontal="true"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swTermina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/swRandom"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="50dp"
+                android:text="Terminal Mode" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtSample"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_height="35dp"
+                android:textAlignment="center"
+                android:text="DigitSize"
+                android:textSize="18dp"
+                android:layout_below="@id/swTermina"
+                android:layout_centerHorizontal="true"/>
+
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtSample"
+                android:layout_centerHorizontal="true"
+                android:valueFrom="40"
+                android:valueTo="85"
+                android:stepSize="5"
+                android:layout_marginHorizontal="30dp"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtMatrix"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:text="MatrixSize"
+                android:textSize="18dp"
+                android:layout_below="@id/sliderFont"
+                android:layout_centerHorizontal="true"/>
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderMatrix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtMatrix"
+                android:layout_centerHorizontal="true"
+                android:valueFrom="5"
+                android:valueTo="40"
+                android:stepSize="5"
+                android:layout_marginHorizontal="30dp"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtDensity"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:text="Matrix Density"
+                android:textSize="18dp"
+                android:layout_below="@id/sliderMatrix"
+                android:layout_centerHorizontal="true"/>
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderDensity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDensity"
+                android:layout_centerHorizontal="true"
+                android:valueFrom="2"
+                android:valueTo="500"
+                android:stepSize="1"
+                android:layout_marginHorizontal="30dp"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/xPosition"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:text="Horizondal Position"
+                android:textSize="18dp"
+                android:layout_below="@id/sliderDensity"
+                android:layout_centerHorizontal="true"/>
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/xPositionSlider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xPosition"
+                android:layout_centerHorizontal="true"
+                android:valueFrom="1"
+                android:valueTo="100"
+                android:stepSize="1"
+                android:layout_marginHorizontal="30dp"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/yPosition"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:text="Vertical Position"
+                android:textSize="18dp"
+                android:layout_below="@id/xPositionSlider"
+                android:layout_centerHorizontal="true"/>
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/yPositionslider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yPosition"
+                android:layout_centerHorizontal="true"
+                android:valueFrom="1"
+                android:valueTo="150"
+                android:stepSize="1"
+                android:layout_marginHorizontal="30dp"
+                />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yPositionslider"
+                android:layout_centerHorizontal="true"
+                android:hint="Enter your name here"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingHorizontal="20dp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveBtnTime"
+                android:text="SAVE"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editName"
+                android:layout_centerHorizontal="true"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/instructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/saveBtnTime"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Instructions"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/instructionsfull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/instructions"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:justificationMode="inter_word"
+                android:text="Thank you so much for purchasing the full version of Dosmatrix Watch Face. As promised, themes are unlocked now. You can just try tapping the watch face directly to change the theme. But thats not all. You can also customize the fontface and make your own name appear on the watchface."
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+</ScrollView>
